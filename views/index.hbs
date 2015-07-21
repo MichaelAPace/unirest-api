@@ -1,7 +1,12 @@
 <h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<p><h3>NYT Best Seller List {{title}}</h3></p>
 {{#books}}
 
-<p>{{title}}</p>
-
+<p><h3>{{title}}</h3</p>
+  <br>
+<a href={{amazon_product_url}} target="_blank"><img src="{{book_image}}" alt="" /></a>
+<p>Current Rank: {{rank}}</p>
+<p>Last Week Rank: {{rank_last_week}}</p>
+<p>Weeks on List: {{weeks_on_list}}</p>
+<p>Description: {{description}}</p>
 {{/books}}
